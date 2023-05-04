@@ -9,3 +9,12 @@ export function login(loginForm) {
 		}
 	})
 }
+export function register(loginForm) {
+	return axios({
+		url: 'register',
+		method: 'POST',
+		data: {
+			...loginForm
+		}
+	})
+}

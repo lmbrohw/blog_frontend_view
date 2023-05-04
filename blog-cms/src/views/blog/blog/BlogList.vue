@@ -18,30 +18,30 @@
 		<el-table :data="blogList">
 			<el-table-column label="序号" type="index" width="50"></el-table-column>
 			<el-table-column label="标题" prop="title" show-overflow-tooltip></el-table-column>
-			<el-table-column label="分类" prop="category.name" width="150"></el-table-column>
-			<el-table-column label="置顶" width="80">
-				<template v-slot="scope">
-					<el-switch v-model="scope.row.top" @change="blogTopChanged(scope.row)"></el-switch>
-				</template>
-			</el-table-column>
-			<el-table-column label="推荐" width="80">
-				<template v-slot="scope">
-					<el-switch v-model="scope.row.recommend" @change="blogRecommendChanged(scope.row)"></el-switch>
-				</template>
-			</el-table-column>
-			<el-table-column label="可见性" width="100">
-				<template v-slot="scope">
-					<el-link icon="el-icon-edit" :underline="false" @click="editBlogVisibility(scope.row)">
-						{{ scope.row.published ? (scope.row.password !== '' ? '密码保护' : '公开') : '私密' }}
-					</el-link>
-				</template>
-			</el-table-column>
-			<el-table-column label="创建时间" width="170">
-				<template v-slot="scope">{{ scope.row.createTime | dateFormat }}</template>
-			</el-table-column>
-			<el-table-column label="最近更新" width="170">
-				<template v-slot="scope">{{ scope.row.updateTime | dateFormat }}</template>
-			</el-table-column>
+<!--			<el-table-column label="分类" prop="category.name" width="150"></el-table-column>-->
+<!--			<el-table-column label="置顶" width="80">-->
+<!--				<template v-slot="scope">-->
+<!--					<el-switch v-model="scope.row.top" @change="blogTopChanged(scope.row)"></el-switch>-->
+<!--				</template>-->
+<!--			</el-table-column>-->
+<!--			<el-table-column label="推荐" width="80">-->
+<!--				<template v-slot="scope">-->
+<!--					<el-switch v-model="scope.row.recommend" @change="blogRecommendChanged(scope.row)"></el-switch>-->
+<!--				</template>-->
+<!--			</el-table-column>-->
+<!--			<el-table-column label="可见性" width="100">-->
+<!--				<template v-slot="scope">-->
+<!--					<el-link icon="el-icon-edit" :underline="false" @click="editBlogVisibility(scope.row)">-->
+<!--						{{ scope.row.published ? (scope.row.password !== '' ? '密码保护' : '公开') : '私密' }}-->
+<!--					</el-link>-->
+<!--				</template>-->
+<!--			</el-table-column>-->
+<!--			<el-table-column label="创建时间" width="170">-->
+<!--				<template v-slot="scope">{{ scope.row.createTime | dateFormat }}</template>-->
+<!--			</el-table-column>-->
+<!--			<el-table-column label="最近更新" width="170">-->
+<!--				<template v-slot="scope">{{ scope.row.updateTime | dateFormat }}</template>-->
+<!--			</el-table-column>-->
 			<el-table-column label="操作" width="200">
 				<template v-slot="scope">
 					<el-button type="primary" icon="el-icon-edit" size="mini" @click="goBlogEditPage(scope.row.id)">编辑</el-button>
@@ -233,7 +233,7 @@
 				this.$router.push(`/blogs/edit/${id}`)
 			},
 			deleteBlogById(id) {
-				this.$confirm('此操作将永久删除该博客<strong style="color: red">及其所有评论</strong>，是否删除?<br>建议将博客置为<strong style="color: red">私密</strong>状态！', '提示', {
+				this.$confirm('此操作将永久删除该博客<strong style="color: red">及其所有评论</strong>，是否删除?', '提示', {
 					confirmButtonText: '确定',
 					cancelButtonText: '取消',
 					type: 'warning',

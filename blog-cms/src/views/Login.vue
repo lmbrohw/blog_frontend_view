@@ -15,6 +15,7 @@
 				</el-form-item>
 				<el-form-item class="btns">
 					<el-button type="primary" @click="login">登录</el-button>
+          <el-button type="primary" @click="register">注册</el-button>
 					<el-button type="info" @click="resetLoginForm">重置</el-button>
 				</el-form-item>
 			</el-form>
@@ -44,6 +45,9 @@
 			}
 		},
 		methods: {
+      register() { // 跳转到注册界面
+        this.$router.push('/register')
+      },
 			resetLoginForm() {
 				this.$refs.loginFormRef.resetFields();
 			},

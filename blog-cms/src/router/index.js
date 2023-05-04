@@ -21,6 +21,7 @@ import LoginLog from "@/views/log/LoginLog";
 import ExceptionLog from "@/views/log/ExceptionLog";
 import VisitLog from "@/views/log/VisitLog";
 import Visitor from "@/views/statistics/Visitor";
+import Register from "@/views/Register";
 import {SAVE_NAV_STATE} from "@/store/mutations-types";
 
 Vue.use(VueRouter)
@@ -35,6 +36,13 @@ const routes = [
 		component: Login,
 		meta: {
 			title: '后台管理登录'
+		}
+	},
+	{
+		path: '/register',
+		component: Register,
+		meta: {
+			title: '后台管理注册'
 		}
 	},
 	{
@@ -194,7 +202,7 @@ const router = new VueRouter({
 
 //挂载路由守卫
 router.beforeEach((to, from, next) => {
-	if (to.path !== '/login') {
+	if (['/login','/register'].indexOf(to.path)==-1) {
 		//获取token
 		const tokenStr = window.localStorage.getItem('token')
 		if (!tokenStr) return next("/login")

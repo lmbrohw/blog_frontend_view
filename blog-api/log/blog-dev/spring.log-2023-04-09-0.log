@@ -1,0 +1,515 @@
+2023-04-09 17:41:13.487  INFO 21340 --- [restartedMain] com.rawchen.BlogApiApplication           : Starting BlogApiApplication on LAPTOP-2DS7VCAA with PID 21340 (D:\git\GitRepo\Blog\blog-api\target\classes started by ljl in D:\git\GitRepo\Blog\blog-api)
+2023-04-09 17:41:13.488 DEBUG 21340 --- [restartedMain] com.rawchen.BlogApiApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2023-04-09 17:41:13.489  INFO 21340 --- [restartedMain] com.rawchen.BlogApiApplication           : The following profiles are active: dev
+2023-04-09 17:41:13.518  INFO 21340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-09 17:41:13.519  INFO 21340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-09 17:41:15.245  INFO 21340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-09 17:41:15.247  INFO 21340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-09 17:41:15.276  INFO 21340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2023-04-09 17:41:16.051  INFO 21340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-04-09 17:41:16.059  INFO 21340 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-09 17:41:16.059  INFO 21340 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2023-04-09 17:41:16.119  INFO 21340 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-09 17:41:16.119  INFO 21340 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2600 ms
+2023-04-09 17:41:17.034  INFO 21340 --- [restartedMain] n.b.p.u.AbstractUserAgentAnalyzerDirect  : - Loaded 90 files in  442 msec using expression: classpath*:UserAgents/**/*.yaml
+2023-04-09 17:41:17.035  INFO 21340 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : 
+2023-04-09 17:41:17.035  INFO 21340 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : /-----------------------------------------------------------\
+2023-04-09 17:41:17.035  INFO 21340 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | Yauaa 5.20 (v5.20 @ 2020-11-22T15:39:16Z)                 |
+2023-04-09 17:41:17.035  INFO 21340 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : +-----------------------------------------------------------+
+2023-04-09 17:41:17.035  INFO 21340 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | For more information: https://yauaa.basjes.nl             |
+2023-04-09 17:41:17.035  INFO 21340 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | Copyright (C) 2013-2020 Niels Basjes - License Apache 2.0 |
+2023-04-09 17:41:17.035  INFO 21340 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : \-----------------------------------------------------------/
+2023-04-09 17:41:17.035  INFO 21340 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : 
+2023-04-09 17:41:17.045  INFO 21340 --- [restartedMain] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Building all needed matchers for the requested 11 fields.
+2023-04-09 17:41:17.519  INFO 21340 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2023-04-09 17:41:17.520  INFO 21340 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2023-04-09 17:41:17.916  INFO 21340 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2023-04-09 17:41:17.926  INFO 21340 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-04-09 17:41:17.926  INFO 21340 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2023-04-09 17:41:17.927  INFO 21340 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2023-04-09 17:41:17.928  INFO 21340 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-04-09 17:41:17.928  INFO 21340 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-04-09 17:41:17.928  INFO 21340 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2023-04-09 17:41:17.928  INFO 21340 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4bb89736
+2023-04-09 17:41:17.957  INFO 21340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-09 17:41:18.401  INFO 21340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-09 17:41:18.407 DEBUG 21340 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : ==>  Preparing: select job_id, bean_name, method_name, params, cron, status, remark, create_time from schedule_job
+2023-04-09 17:41:18.425 DEBUG 21340 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : ==> Parameters: 
+2023-04-09 17:41:18.481 DEBUG 21340 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : <==      Total: 2
+2023-04-09 17:41:18.693  INFO 21340 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-09 17:41:19.068  INFO 21340 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@536b8f67, org.springframework.security.web.context.SecurityContextPersistenceFilter@32737511, org.springframework.security.web.header.HeaderWriterFilter@1198a2e2, org.springframework.web.filter.CorsFilter@e46c63b, org.springframework.security.web.authentication.logout.LogoutFilter@c856d8f, com.rawchen.config.JwtLoginFilter@42105890, com.rawchen.config.JwtFilter@243368ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54ee857a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74e84fe0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2baccb98, org.springframework.security.web.session.SessionManagementFilter@553a61f6, org.springframework.security.web.access.ExceptionTranslationFilter@35cea157, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1fd93c79]
+2023-04-09 17:41:19.127  INFO 21340 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-09 17:41:19.144  INFO 21340 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2023-04-09 17:41:19.145  INFO 21340 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-04-09 17:41:19.166  INFO 21340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-09 17:41:19.168  INFO 21340 --- [restartedMain] com.rawchen.BlogApiApplication           : Started BlogApiApplication in 5.985 seconds (JVM running for 6.637)
+2023-04-09 17:45:37.907  INFO 21340 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 17:45:37.908  INFO 21340 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-09 17:45:37.921  INFO 21340 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2023-04-09 17:45:38.285 DEBUG 21340 --- [http-nio-8090-exec-1] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2023-04-09 17:45:38.286 DEBUG 21340 --- [http-nio-8090-exec-1] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2023-04-09 17:45:38.335 DEBUG 21340 --- [http-nio-8090-exec-1] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 2
+2023-04-09 17:45:38.409  INFO 21340 --- [task-1] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Initializing Analyzer data structures
+2023-04-09 17:45:39.017  INFO 21340 --- [task-1] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Built in 607 msec : Hashmap 114881, Ranges map:2900
+2023-04-09 17:45:39.060 DEBUG 21340 --- [task-1] c.r.mapper.VisitorMapper.saveVisitor     : ==>  Preparing: insert into visitor (uuid, ip, ip_source, os, browser, create_time, last_time, pv, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-09 17:45:39.060 DEBUG 21340 --- [task-2] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-09 17:45:39.062 DEBUG 21340 --- [task-1] c.r.mapper.VisitorMapper.saveVisitor     : ==> Parameters: d1464b9b-9f4e-3c39-8ffe-b2270c495448(String), 10.182.30.160(String), 内网IP|内网IP(String), Windows 10(String), Edge 112.0.0.0(String), 2023-04-09 17:45:38.365(Timestamp), 2023-04-09 17:45:38.365(Timestamp), 0(Integer), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34(String)
+2023-04-09 17:45:39.062 DEBUG 21340 --- [task-2] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: d1464b9b-9f4e-3c39-8ffe-b2270c495448(String), /blogs(String), GET(String), {"pageNum":1}(String), 访问页面(String), 首页(String), 第1页(String), 10.182.30.160(String), 内网IP|内网IP(String), Windows 10(String), Edge 112.0.0.0(String), 256(Integer), 2023-04-09 17:45:38.369(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34(String)
+2023-04-09 17:45:39.136 DEBUG 21340 --- [task-1] c.r.mapper.VisitorMapper.saveVisitor     : <==    Updates: 1
+2023-04-09 17:45:39.137 DEBUG 21340 --- [task-2] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-09 17:45:53.189 DEBUG 21340 --- [http-nio-8090-exec-6] foListByCategoryNameAndIsPublished_COUNT : ==>  Preparing: SELECT count(0) FROM category AS c LEFT JOIN blog AS b ON b.category_id = c.id WHERE c.category_name = ? AND b.is_published = true
+2023-04-09 17:45:53.190 DEBUG 21340 --- [http-nio-8090-exec-6] foListByCategoryNameAndIsPublished_COUNT : ==> Parameters: default(String)
+2023-04-09 17:45:53.221 DEBUG 21340 --- [http-nio-8090-exec-6] foListByCategoryNameAndIsPublished_COUNT : <==      Total: 1
+2023-04-09 17:45:53.228 DEBUG 21340 --- [http-nio-8090-exec-6] BlogInfoListByCategoryNameAndIsPublished : ==>  Preparing: SELECT b.id, b.title, b.description, b.is_top, b.create_time, b.views, b.password, c.category_name FROM category AS c LEFT JOIN blog AS b ON b.category_id = c.id WHERE c.category_name = ? AND b.is_published = true order by is_top desc, create_time desc LIMIT ?
+2023-04-09 17:45:53.229 DEBUG 21340 --- [http-nio-8090-exec-6] BlogInfoListByCategoryNameAndIsPublished : ==> Parameters: default(String), 5(Integer)
+2023-04-09 17:45:53.263 DEBUG 21340 --- [http-nio-8090-exec-6] BlogInfoListByCategoryNameAndIsPublished : <==      Total: 1
+2023-04-09 17:45:53.319 DEBUG 21340 --- [http-nio-8090-exec-6] c.r.mapper.TagMapper.getTagListByBlogId  : ==>  Preparing: select t.id, t.tag_name, t.color from blog_tag as bt left join tag as t on bt.tag_id = t.id where bt.blog_id = ?
+2023-04-09 17:45:53.319 DEBUG 21340 --- [http-nio-8090-exec-6] c.r.mapper.TagMapper.getTagListByBlogId  : ==> Parameters: 2(Long)
+2023-04-09 17:45:53.349 DEBUG 21340 --- [http-nio-8090-exec-6] c.r.mapper.TagMapper.getTagListByBlogId  : <==      Total: 2
+2023-04-09 17:45:53.450 DEBUG 21340 --- [task-3] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-09 17:45:53.452 DEBUG 21340 --- [task-3] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: d1464b9b-9f4e-3c39-8ffe-b2270c495448(String), /category(String), GET(String), {"categoryName":"default","pageNum":1}(String), 查看分类(String), default(String), 分类名称：default，第1页(String), 10.182.30.160(String), 内网IP|内网IP(String), Windows 10(String), Edge 112.0.0.0(String), 341(Integer), 2023-04-09 17:45:53.416(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34(String)
+2023-04-09 17:45:53.513 DEBUG 21340 --- [task-3] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-09 17:45:54.200 DEBUG 21340 --- [task-4] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-09 17:45:54.203 DEBUG 21340 --- [task-4] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: d1464b9b-9f4e-3c39-8ffe-b2270c495448(String), /archives(String), GET(String), {}(String), 访问页面(String), 文章归档(String), (String), 10.182.30.160(String), 内网IP|内网IP(String), Windows 10(String), Edge 112.0.0.0(String), 32(Integer), 2023-04-09 17:45:54.138(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34(String)
+2023-04-09 17:45:54.266 DEBUG 21340 --- [task-4] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-09 17:45:54.916 DEBUG 21340 --- [http-nio-8090-exec-1] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-09 17:45:54.916 DEBUG 21340 --- [http-nio-8090-exec-1] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-09 17:45:54.946 DEBUG 21340 --- [http-nio-8090-exec-1] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-09 17:45:54.948 DEBUG 21340 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-09 17:45:54.948 DEBUG 21340 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-09 17:45:54.978 DEBUG 21340 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 1
+2023-04-09 17:45:55.041 DEBUG 21340 --- [task-5] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-09 17:45:55.042 DEBUG 21340 --- [task-5] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: d1464b9b-9f4e-3c39-8ffe-b2270c495448(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 10.182.30.160(String), 内网IP|内网IP(String), Windows 10(String), Edge 112.0.0.0(String), 99(Integer), 2023-04-09 17:45:55.009(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34(String)
+2023-04-09 17:45:55.101 DEBUG 21340 --- [task-5] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-09 17:45:55.514 DEBUG 21340 --- [http-nio-8090-exec-3] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-09 17:45:55.514 DEBUG 21340 --- [http-nio-8090-exec-3] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-09 17:45:55.550 DEBUG 21340 --- [http-nio-8090-exec-3] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-09 17:45:55.648 DEBUG 21340 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-09 17:45:55.649 DEBUG 21340 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: d1464b9b-9f4e-3c39-8ffe-b2270c495448(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 10.182.30.160(String), 内网IP|内网IP(String), Windows 10(String), Edge 112.0.0.0(String), 74(Integer), 2023-04-09 17:45:55.617(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34(String)
+2023-04-09 17:45:55.708 DEBUG 21340 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-09 17:45:55.797 DEBUG 21340 --- [http-nio-8090-exec-5] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-09 17:45:55.797 DEBUG 21340 --- [http-nio-8090-exec-5] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-09 17:45:55.828 DEBUG 21340 --- [http-nio-8090-exec-5] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-09 17:45:55.831 DEBUG 21340 --- [http-nio-8090-exec-5] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-09 17:45:55.832 DEBUG 21340 --- [http-nio-8090-exec-5] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-09 17:45:55.862 DEBUG 21340 --- [http-nio-8090-exec-5] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-09 17:45:56.178 DEBUG 21340 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-09 17:45:56.181 DEBUG 21340 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: d1464b9b-9f4e-3c39-8ffe-b2270c495448(String), /about(String), GET(String), {}(String), 访问页面(String), 关于我(String), (String), 10.182.30.160(String), 内网IP|内网IP(String), Windows 10(String), Edge 112.0.0.0(String), 34(Integer), 2023-04-09 17:45:56.145(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34(String)
+2023-04-09 17:45:56.221 DEBUG 21340 --- [http-nio-8090-exec-10] c.r.m.A.getAboutCommentEnabled           : ==>  Preparing: select value from about where name_en = "commentEnabled"
+2023-04-09 17:45:56.221 DEBUG 21340 --- [http-nio-8090-exec-10] c.r.m.A.getAboutCommentEnabled           : ==> Parameters: 
+2023-04-09 17:45:56.239 DEBUG 21340 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-09 17:45:56.254 DEBUG 21340 --- [http-nio-8090-exec-10] c.r.m.A.getAboutCommentEnabled           : <==      Total: 1
+2023-04-09 17:45:56.255 DEBUG 21340 --- [http-nio-8090-exec-10] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-09 17:45:56.255 DEBUG 21340 --- [http-nio-8090-exec-10] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 1(Integer)
+2023-04-09 17:45:56.287 DEBUG 21340 --- [http-nio-8090-exec-10] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-09 17:45:56.292 DEBUG 21340 --- [http-nio-8090-exec-10] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-09 17:45:56.292 DEBUG 21340 --- [http-nio-8090-exec-10] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 1(Integer), -1(Long)
+2023-04-09 17:45:56.323 DEBUG 21340 --- [http-nio-8090-exec-10] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-09 17:45:57.387 DEBUG 21340 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-09 17:45:57.388 DEBUG 21340 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: d1464b9b-9f4e-3c39-8ffe-b2270c495448(String), /blogs(String), GET(String), {"pageNum":1}(String), 访问页面(String), 首页(String), 第1页(String), 10.182.30.160(String), 内网IP|内网IP(String), Windows 10(String), Edge 112.0.0.0(String), 133(Integer), 2023-04-09 17:45:57.322(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34(String)
+2023-04-09 17:45:57.451 DEBUG 21340 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-09 17:49:53.761 DEBUG 21340 --- [http-nio-8090-exec-3] c.r.m.S.getWebTitleSuffix                : ==>  Preparing: select value from site_setting where name_en = 'webTitleSuffix'
+2023-04-09 17:49:53.762 DEBUG 21340 --- [http-nio-8090-exec-3] c.r.m.S.getWebTitleSuffix                : ==> Parameters: 
+2023-04-09 17:49:53.794 DEBUG 21340 --- [http-nio-8090-exec-3] c.r.m.S.getWebTitleSuffix                : <==      Total: 1
+2023-04-09 17:49:56.403 DEBUG 21340 --- [http-nio-8090-exec-6] com.rawchen.config.JwtLoginFilter        : Request is to process authentication
+2023-04-09 17:49:56.540 DEBUG 21340 --- [http-nio-8090-exec-6] c.r.mapper.UserMapper.findByUsername     : ==>  Preparing: select * from user where username = ? limit 1
+2023-04-09 17:49:56.541 DEBUG 21340 --- [http-nio-8090-exec-6] c.r.mapper.UserMapper.findByUsername     : ==> Parameters: admin(String)
+2023-04-09 17:49:56.571 DEBUG 21340 --- [http-nio-8090-exec-6] c.r.mapper.UserMapper.findByUsername     : <==      Total: 1
+2023-04-09 17:49:56.727 ERROR 21340 --- [http-nio-8090-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Filter execution threw an exception] with root cause
+
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:99)
+	at com.rawchen.util.JwtUtils.generateToken(JwtUtils.java:73)
+	at com.rawchen.config.JwtLoginFilter.successfulAuthentication(JwtLoginFilter.java:70)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+2023-04-09 17:52:40.702  INFO 21340 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-04-09 17:52:40.708  INFO 21340 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-09 17:52:40.708  INFO 21340 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2023-04-09 17:52:40.709  INFO 21340 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-04-09 17:52:40.709  INFO 21340 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-04-09 17:52:40.709  INFO 21340 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-04-09 17:52:40.833  INFO 21340 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-09 17:52:40.842  INFO 21340 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-09 17:52:49.966  INFO 13192 --- [restartedMain] com.rawchen.BlogApiApplication           : Starting BlogApiApplication on LAPTOP-2DS7VCAA with PID 13192 (D:\git\GitRepo\Blog\blog-api\target\classes started by ljl in D:\git\GitRepo\Blog\blog-api)
+2023-04-09 17:52:49.968 DEBUG 13192 --- [restartedMain] com.rawchen.BlogApiApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2023-04-09 17:52:49.968  INFO 13192 --- [restartedMain] com.rawchen.BlogApiApplication           : The following profiles are active: dev
+2023-04-09 17:52:49.998  INFO 13192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-09 17:52:49.998  INFO 13192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-09 17:52:51.785  INFO 13192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-09 17:52:51.787  INFO 13192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-09 17:52:51.819  INFO 13192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2023-04-09 17:52:52.515  INFO 13192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-04-09 17:52:52.523  INFO 13192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-09 17:52:52.523  INFO 13192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2023-04-09 17:52:52.587  INFO 13192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-09 17:52:52.588  INFO 13192 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2590 ms
+2023-04-09 17:52:53.492  INFO 13192 --- [restartedMain] n.b.p.u.AbstractUserAgentAnalyzerDirect  : - Loaded 90 files in  426 msec using expression: classpath*:UserAgents/**/*.yaml
+2023-04-09 17:52:53.492  INFO 13192 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : 
+2023-04-09 17:52:53.492  INFO 13192 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : /-----------------------------------------------------------\
+2023-04-09 17:52:53.492  INFO 13192 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | Yauaa 5.20 (v5.20 @ 2020-11-22T15:39:16Z)                 |
+2023-04-09 17:52:53.492  INFO 13192 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : +-----------------------------------------------------------+
+2023-04-09 17:52:53.492  INFO 13192 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | For more information: https://yauaa.basjes.nl             |
+2023-04-09 17:52:53.493  INFO 13192 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | Copyright (C) 2013-2020 Niels Basjes - License Apache 2.0 |
+2023-04-09 17:52:53.493  INFO 13192 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : \-----------------------------------------------------------/
+2023-04-09 17:52:53.493  INFO 13192 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : 
+2023-04-09 17:52:53.500  INFO 13192 --- [restartedMain] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Building all needed matchers for the requested 11 fields.
+2023-04-09 17:52:53.993  INFO 13192 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2023-04-09 17:52:53.994  INFO 13192 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2023-04-09 17:52:54.402  INFO 13192 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2023-04-09 17:52:54.412  INFO 13192 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-04-09 17:52:54.413  INFO 13192 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2023-04-09 17:52:54.413  INFO 13192 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2023-04-09 17:52:54.413  INFO 13192 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-04-09 17:52:54.413  INFO 13192 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-04-09 17:52:54.413  INFO 13192 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2023-04-09 17:52:54.413  INFO 13192 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3824336d
+2023-04-09 17:52:54.437  INFO 13192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-09 17:52:54.853  INFO 13192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-09 17:52:54.857 DEBUG 13192 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : ==>  Preparing: select job_id, bean_name, method_name, params, cron, status, remark, create_time from schedule_job
+2023-04-09 17:52:54.876 DEBUG 13192 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : ==> Parameters: 
+2023-04-09 17:52:54.923 DEBUG 13192 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : <==      Total: 2
+2023-04-09 17:52:55.122  INFO 13192 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-09 17:52:55.495  INFO 13192 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49b80763, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d6eed64, org.springframework.security.web.header.HeaderWriterFilter@568415d8, org.springframework.web.filter.CorsFilter@125b9a38, org.springframework.security.web.authentication.logout.LogoutFilter@41c1fdf6, com.rawchen.config.JwtLoginFilter@75812be6, com.rawchen.config.JwtFilter@49b8dca1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b94ac1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c2a429b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@403249ea, org.springframework.security.web.session.SessionManagementFilter@68baa675, org.springframework.security.web.access.ExceptionTranslationFilter@12e8e22e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17addc9f]
+2023-04-09 17:52:55.548  INFO 13192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-09 17:52:55.564  INFO 13192 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2023-04-09 17:52:55.564  INFO 13192 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-04-09 17:52:55.587  INFO 13192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-09 17:52:55.588  INFO 13192 --- [restartedMain] com.rawchen.BlogApiApplication           : Started BlogApiApplication in 5.909 seconds (JVM running for 6.512)
+2023-04-09 17:53:01.898  INFO 13192 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 17:53:01.898  INFO 13192 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-09 17:53:01.905  INFO 13192 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2023-04-09 17:53:01.950 DEBUG 13192 --- [http-nio-8090-exec-1] com.rawchen.config.JwtLoginFilter        : Request is to process authentication
+2023-04-09 17:53:02.104 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.mapper.UserMapper.findByUsername     : ==>  Preparing: select * from user where username = ? limit 1
+2023-04-09 17:53:02.104 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.mapper.UserMapper.findByUsername     : ==> Parameters: admin(String)
+2023-04-09 17:53:02.137 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.mapper.UserMapper.findByUsername     : <==      Total: 1
+2023-04-09 17:53:02.321  INFO 13192 --- [task-1] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Initializing Analyzer data structures
+2023-04-09 17:53:02.448 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.V.countVisitLogByToday             : ==>  Preparing: select count(*) from visit_log where date(create_time) = curdate()
+2023-04-09 17:53:02.448 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.V.countVisitLogByToday             : ==> Parameters: 
+2023-04-09 17:53:02.479 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.V.countVisitLogByToday             : <==      Total: 1
+2023-04-09 17:53:02.510 DEBUG 13192 --- [http-nio-8090-exec-4] com.rawchen.mapper.BlogMapper.countBlog  : ==>  Preparing: select count(*) from blog
+2023-04-09 17:53:02.510 DEBUG 13192 --- [http-nio-8090-exec-4] com.rawchen.mapper.BlogMapper.countBlog  : ==> Parameters: 
+2023-04-09 17:53:02.543 DEBUG 13192 --- [http-nio-8090-exec-4] com.rawchen.mapper.BlogMapper.countBlog  : <==      Total: 1
+2023-04-09 17:53:02.544 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.mapper.CommentMapper.countComment    : ==>  Preparing: select count(*) from comment
+2023-04-09 17:53:02.544 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.mapper.CommentMapper.countComment    : ==> Parameters: 
+2023-04-09 17:53:02.576 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.mapper.CommentMapper.countComment    : <==      Total: 1
+2023-04-09 17:53:02.577 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.B.getCategoryBlogCountList         : ==>  Preparing: select category_id, count(category_id) as blog_count from blog group by category_id
+2023-04-09 17:53:02.577 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.B.getCategoryBlogCountList         : ==> Parameters: 
+2023-04-09 17:53:02.608 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.B.getCategoryBlogCountList         : <==      Total: 2
+2023-04-09 17:53:02.608 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2023-04-09 17:53:02.609 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2023-04-09 17:53:02.640 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 2
+2023-04-09 17:53:02.641 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.mapper.TagMapper.getTagBlogCount     : ==>  Preparing: select tag_id, count(tag_id) as blog_count from blog_tag group by tag_id
+2023-04-09 17:53:02.641 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.mapper.TagMapper.getTagBlogCount     : ==> Parameters: 
+2023-04-09 17:53:02.671 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.mapper.TagMapper.getTagBlogCount     : <==      Total: 2
+2023-04-09 17:53:02.671 DEBUG 13192 --- [http-nio-8090-exec-4] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: select id, tag_name, color from tag order by id desc
+2023-04-09 17:53:02.672 DEBUG 13192 --- [http-nio-8090-exec-4] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 
+2023-04-09 17:53:02.701 DEBUG 13192 --- [http-nio-8090-exec-4] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 2
+2023-04-09 17:53:02.701 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.V.getVisitRecordListByLimit        : ==>  Preparing: select pv, uv, date from visit_record order by id desc limit ?
+2023-04-09 17:53:02.702 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.V.getVisitRecordListByLimit        : ==> Parameters: 30(Integer)
+2023-04-09 17:53:02.733 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.V.getVisitRecordListByLimit        : <==      Total: 10
+2023-04-09 17:53:02.734 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.C.getCityVisitorList               : ==>  Preparing: select city, uv from city_visitor order by uv desc
+2023-04-09 17:53:02.734 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.C.getCityVisitorList               : ==> Parameters: 
+2023-04-09 17:53:02.771 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.C.getCityVisitorList               : <==      Total: 0
+2023-04-09 17:53:02.878  INFO 13192 --- [task-1] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Built in 556 msec : Hashmap 114881, Ranges map:2900
+2023-04-09 17:53:02.919 DEBUG 13192 --- [task-1] c.r.mapper.LoginLogMapper.saveLoginLog   : ==>  Preparing: insert into login_log (username, ip, ip_source, os, browser, status, description, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-09 17:53:02.921 DEBUG 13192 --- [task-1] c.r.mapper.LoginLogMapper.saveLoginLog   : ==> Parameters: admin(String), 10.182.30.160(String), 内网IP|内网IP(String), Windows 10(String), Edge 112.0.0.0(String), true(Boolean), 登录成功(String), 2023-04-09 17:53:02.282(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34(String)
+2023-04-09 17:53:02.985 DEBUG 13192 --- [task-1] c.r.mapper.LoginLogMapper.saveLoginLog   : <==    Updates: 1
+2023-04-09 17:53:13.981 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2023-04-09 17:53:13.982 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2023-04-09 17:53:14.012 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 2
+2023-04-09 17:53:14.015 DEBUG 13192 --- [http-nio-8090-exec-5] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: select id, tag_name, color from tag order by id desc
+2023-04-09 17:53:14.015 DEBUG 13192 --- [http-nio-8090-exec-5] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 
+2023-04-09 17:53:14.046 DEBUG 13192 --- [http-nio-8090-exec-5] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 2
+2023-04-09 17:53:16.185 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.V.countVisitLogByToday             : ==>  Preparing: select count(*) from visit_log where date(create_time) = curdate()
+2023-04-09 17:53:16.185 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.V.countVisitLogByToday             : ==> Parameters: 
+2023-04-09 17:53:16.219 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.V.countVisitLogByToday             : <==      Total: 1
+2023-04-09 17:53:16.251 DEBUG 13192 --- [http-nio-8090-exec-6] com.rawchen.mapper.BlogMapper.countBlog  : ==>  Preparing: select count(*) from blog
+2023-04-09 17:53:16.252 DEBUG 13192 --- [http-nio-8090-exec-6] com.rawchen.mapper.BlogMapper.countBlog  : ==> Parameters: 
+2023-04-09 17:53:16.283 DEBUG 13192 --- [http-nio-8090-exec-6] com.rawchen.mapper.BlogMapper.countBlog  : <==      Total: 1
+2023-04-09 17:53:16.285 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.mapper.CommentMapper.countComment    : ==>  Preparing: select count(*) from comment
+2023-04-09 17:53:16.286 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.mapper.CommentMapper.countComment    : ==> Parameters: 
+2023-04-09 17:53:16.317 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.mapper.CommentMapper.countComment    : <==      Total: 1
+2023-04-09 17:53:16.318 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.B.getCategoryBlogCountList         : ==>  Preparing: select category_id, count(category_id) as blog_count from blog group by category_id
+2023-04-09 17:53:16.318 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.B.getCategoryBlogCountList         : ==> Parameters: 
+2023-04-09 17:53:16.356 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.B.getCategoryBlogCountList         : <==      Total: 2
+2023-04-09 17:53:16.356 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2023-04-09 17:53:16.356 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2023-04-09 17:53:16.386 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 2
+2023-04-09 17:53:16.387 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.mapper.TagMapper.getTagBlogCount     : ==>  Preparing: select tag_id, count(tag_id) as blog_count from blog_tag group by tag_id
+2023-04-09 17:53:16.387 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.mapper.TagMapper.getTagBlogCount     : ==> Parameters: 
+2023-04-09 17:53:16.416 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.mapper.TagMapper.getTagBlogCount     : <==      Total: 2
+2023-04-09 17:53:16.417 DEBUG 13192 --- [http-nio-8090-exec-6] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: select id, tag_name, color from tag order by id desc
+2023-04-09 17:53:16.417 DEBUG 13192 --- [http-nio-8090-exec-6] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 
+2023-04-09 17:53:16.450 DEBUG 13192 --- [http-nio-8090-exec-6] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 2
+2023-04-09 17:53:16.451 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.V.getVisitRecordListByLimit        : ==>  Preparing: select pv, uv, date from visit_record order by id desc limit ?
+2023-04-09 17:53:16.451 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.V.getVisitRecordListByLimit        : ==> Parameters: 30(Integer)
+2023-04-09 17:53:16.484 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.V.getVisitRecordListByLimit        : <==      Total: 10
+2023-04-09 17:53:16.485 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.C.getCityVisitorList               : ==>  Preparing: select city, uv from city_visitor order by uv desc
+2023-04-09 17:53:16.485 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.C.getCityVisitorList               : ==> Parameters: 
+2023-04-09 17:53:16.524 DEBUG 13192 --- [http-nio-8090-exec-6] c.r.m.C.getCityVisitorList               : <==      Total: 0
+2023-04-09 17:53:40.583 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2023-04-09 17:53:40.583 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2023-04-09 17:53:40.622 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 2
+2023-04-09 17:53:40.623 DEBUG 13192 --- [http-nio-8090-exec-9] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: select id, tag_name, color from tag order by id desc
+2023-04-09 17:53:40.623 DEBUG 13192 --- [http-nio-8090-exec-9] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 
+2023-04-09 17:53:40.653 DEBUG 13192 --- [http-nio-8090-exec-9] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 2
+2023-04-09 17:53:43.139 DEBUG 13192 --- [http-nio-8090-exec-1] .r.m.B.getListByTitleAndCategoryId_COUNT : ==>  Preparing: SELECT count(0) FROM blog AS b LEFT JOIN category AS c ON b.category_id = c.id
+2023-04-09 17:53:43.140 DEBUG 13192 --- [http-nio-8090-exec-1] .r.m.B.getListByTitleAndCategoryId_COUNT : ==> Parameters: 
+2023-04-09 17:53:43.170 DEBUG 13192 --- [http-nio-8090-exec-1] .r.m.B.getListByTitleAndCategoryId_COUNT : <==      Total: 1
+2023-04-09 17:53:43.175 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.B.getListByTitleAndCategoryId      : ==>  Preparing: SELECT b.id, b.title, b.first_picture, b.create_time, b.update_time, b.is_published, b.is_recommend, b.is_appreciation, b.is_comment_enabled, b.is_top, b.password, c.id AS category_id, c.category_name FROM blog AS b LEFT JOIN category AS c ON b.category_id = c.id order by create_time desc LIMIT ?
+2023-04-09 17:53:43.176 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.B.getListByTitleAndCategoryId      : ==> Parameters: 10(Integer)
+2023-04-09 17:53:43.209 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.B.getListByTitleAndCategoryId      : <==      Total: 2
+2023-04-09 17:53:43.210 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2023-04-09 17:53:43.210 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2023-04-09 17:53:43.239 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 2
+2023-04-09 17:53:43.723 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-09 17:53:43.723 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-09 17:53:43.753 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-09 17:53:43.754 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-09 17:53:43.754 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 10(Integer)
+2023-04-09 17:53:43.790 DEBUG 13192 --- [http-nio-8090-exec-4] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 1
+2023-04-09 17:53:44.608 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.C.getCategoryList_COUNT            : ==>  Preparing: SELECT count(0) FROM category
+2023-04-09 17:53:44.609 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.C.getCategoryList_COUNT            : ==> Parameters: 
+2023-04-09 17:53:44.638 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.C.getCategoryList_COUNT            : <==      Total: 1
+2023-04-09 17:53:44.638 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: SELECT id, category_name FROM category order by id desc LIMIT ?
+2023-04-09 17:53:44.639 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 10(Integer)
+2023-04-09 17:53:44.668 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 2
+2023-04-09 17:53:45.350 DEBUG 13192 --- [http-nio-8090-exec-10] c.r.mapper.BlogMapper.getIdAndTitleList  : ==>  Preparing: select id, title from blog order by create_time desc
+2023-04-09 17:53:45.351 DEBUG 13192 --- [http-nio-8090-exec-10] c.r.mapper.BlogMapper.getIdAndTitleList  : ==> Parameters: 
+2023-04-09 17:53:45.358 DEBUG 13192 --- [http-nio-8090-exec-9] .C.getListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c LEFT JOIN blog AS b ON c.blog_id = b.id WHERE c.parent_comment_id = ?
+2023-04-09 17:53:45.358 DEBUG 13192 --- [http-nio-8090-exec-9] .C.getListByPageAndParentCommentId_COUNT : ==> Parameters: -1(Long)
+2023-04-09 17:53:45.380 DEBUG 13192 --- [http-nio-8090-exec-10] c.r.mapper.BlogMapper.getIdAndTitleList  : <==      Total: 2
+2023-04-09 17:53:45.389 DEBUG 13192 --- [http-nio-8090-exec-9] .C.getListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-09 17:53:45.392 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: SELECT c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title FROM comment AS c LEFT JOIN blog AS b ON c.blog_id = b.id WHERE c.parent_comment_id = ? order by create_time desc LIMIT ?
+2023-04-09 17:53:45.392 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: -1(Long), 10(Integer)
+2023-04-09 17:53:45.426 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 6
+2023-04-09 17:53:45.427 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.427 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 12(Long)
+2023-04-09 17:53:45.456 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 0
+2023-04-09 17:53:45.457 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.458 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 10(Long)
+2023-04-09 17:53:45.490 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 1
+2023-04-09 17:53:45.490 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.490 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 11(Long)
+2023-04-09 17:53:45.525 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 0
+2023-04-09 17:53:45.525 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.526 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 9(Long)
+2023-04-09 17:53:45.563 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 0
+2023-04-09 17:53:45.565 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.566 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 8(Long)
+2023-04-09 17:53:45.596 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 0
+2023-04-09 17:53:45.597 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.598 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 5(Long)
+2023-04-09 17:53:45.630 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 1
+2023-04-09 17:53:45.630 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.631 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 7(Long)
+2023-04-09 17:53:45.661 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 0
+2023-04-09 17:53:45.661 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.662 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 1(Long)
+2023-04-09 17:53:45.694 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 2
+2023-04-09 17:53:45.694 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.695 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 2(Long)
+2023-04-09 17:53:45.726 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 1
+2023-04-09 17:53:45.726 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.727 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 3(Long)
+2023-04-09 17:53:45.757 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 1
+2023-04-09 17:53:45.758 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.758 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 4(Long)
+2023-04-09 17:53:45.789 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 0
+2023-04-09 17:53:45.790 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==>  Preparing: select c.id, c.nickname, c.email, c.content, c.avatar, c.create_time, c.ip, c.is_published, c.is_admin_comment, c.page, c.is_notice, c.parent_comment_id, c.website, c.blog_id, c.qq, b.title from comment as c left join blog as b on c.blog_id=b.id WHERE c.parent_comment_id=?
+2023-04-09 17:53:45.790 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : ==> Parameters: 6(Long)
+2023-04-09 17:53:45.820 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getListByPageAndParentCommentId  : <==      Total: 0
+2023-04-09 17:53:48.471 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.mapper.SiteSettingMapper.getList     : ==>  Preparing: select * from site_setting
+2023-04-09 17:53:48.472 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.mapper.SiteSettingMapper.getList     : ==> Parameters: 
+2023-04-09 17:53:48.508 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.mapper.SiteSettingMapper.getList     : <==      Total: 27
+2023-04-09 17:53:48.824 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.SiteSettingMapper.getFriendInfo    : ==>  Preparing: select * from site_setting where type = 4
+2023-04-09 17:53:48.825 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.SiteSettingMapper.getFriendInfo    : ==> Parameters: 
+2023-04-09 17:53:48.858 DEBUG 13192 --- [http-nio-8090-exec-7] c.r.m.FriendMapper.getFriendList_COUNT   : ==>  Preparing: SELECT count(0) FROM friend
+2023-04-09 17:53:48.858 DEBUG 13192 --- [http-nio-8090-exec-7] c.r.m.FriendMapper.getFriendList_COUNT   : ==> Parameters: 
+2023-04-09 17:53:48.858 DEBUG 13192 --- [http-nio-8090-exec-5] c.r.m.SiteSettingMapper.getFriendInfo    : <==      Total: 2
+2023-04-09 17:53:48.888 DEBUG 13192 --- [http-nio-8090-exec-7] c.r.m.FriendMapper.getFriendList_COUNT   : <==      Total: 1
+2023-04-09 17:53:49.110 DEBUG 13192 --- [http-nio-8090-exec-8] com.rawchen.mapper.AboutMapper.getList   : ==>  Preparing: select * from about
+2023-04-09 17:53:49.110 DEBUG 13192 --- [http-nio-8090-exec-8] com.rawchen.mapper.AboutMapper.getList   : ==> Parameters: 
+2023-04-09 17:53:49.140 DEBUG 13192 --- [http-nio-8090-exec-8] com.rawchen.mapper.AboutMapper.getList   : <==      Total: 4
+2023-04-09 17:53:59.714 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.m.S.getJobList_COUNT                 : ==>  Preparing: SELECT count(0) FROM schedule_job
+2023-04-09 17:53:59.715 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.m.S.getJobList_COUNT                 : ==> Parameters: 
+2023-04-09 17:53:59.743 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.m.S.getJobList_COUNT                 : <==      Total: 1
+2023-04-09 17:53:59.743 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.mapper.ScheduleJobMapper.getJobList  : ==>  Preparing: select job_id, bean_name, method_name, params, cron, status, remark, create_time from schedule_job LIMIT ?
+2023-04-09 17:53:59.743 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.mapper.ScheduleJobMapper.getJobList  : ==> Parameters: 10(Integer)
+2023-04-09 17:53:59.775 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.mapper.ScheduleJobMapper.getJobList  : <==      Total: 2
+2023-04-09 17:54:00.645 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.S.getJobLogListByDate_COUNT        : ==>  Preparing: SELECT count(0) FROM schedule_job_log
+2023-04-09 17:54:00.645 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.S.getJobLogListByDate_COUNT        : ==> Parameters: 
+2023-04-09 17:54:00.675 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.S.getJobLogListByDate_COUNT        : <==      Total: 1
+2023-04-09 17:54:00.676 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.S.getJobLogListByDate              : ==>  Preparing: SELECT log_id, job_id, bean_name, method_name, params, status, error, times, create_time FROM schedule_job_log order by create_time desc LIMIT ?
+2023-04-09 17:54:00.676 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.S.getJobLogListByDate              : ==> Parameters: 10(Integer)
+2023-04-09 17:54:00.715 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.S.getJobLogListByDate              : <==      Total: 10
+2023-04-09 17:54:03.331 DEBUG 13192 --- [http-nio-8090-exec-7] r.m.V.getVisitLogListByUUIDAndDate_COUNT : ==>  Preparing: SELECT count(0) FROM visit_log
+2023-04-09 17:54:03.331 DEBUG 13192 --- [http-nio-8090-exec-7] r.m.V.getVisitLogListByUUIDAndDate_COUNT : ==> Parameters: 
+2023-04-09 17:54:03.361 DEBUG 13192 --- [http-nio-8090-exec-7] r.m.V.getVisitLogListByUUIDAndDate_COUNT : <==      Total: 1
+2023-04-09 17:54:03.362 DEBUG 13192 --- [http-nio-8090-exec-7] c.r.m.V.getVisitLogListByUUIDAndDate     : ==>  Preparing: SELECT id, uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time FROM visit_log order by create_time desc LIMIT ?
+2023-04-09 17:54:03.363 DEBUG 13192 --- [http-nio-8090-exec-7] c.r.m.V.getVisitLogListByUUIDAndDate     : ==> Parameters: 10(Integer)
+2023-04-09 17:54:03.399 DEBUG 13192 --- [http-nio-8090-exec-7] c.r.m.V.getVisitLogListByUUIDAndDate     : <==      Total: 10
+2023-04-09 17:54:03.714 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.E.getExceptionLogListByDate_COUNT  : ==>  Preparing: SELECT count(0) FROM exception_log
+2023-04-09 17:54:03.714 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.E.getExceptionLogListByDate_COUNT  : ==> Parameters: 
+2023-04-09 17:54:03.743 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.E.getExceptionLogListByDate_COUNT  : <==      Total: 1
+2023-04-09 17:54:03.744 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.E.getExceptionLogListByDate        : ==>  Preparing: SELECT id, uri, method, param, description, error, ip, ip_source, os, browser, create_time FROM exception_log order by create_time desc LIMIT ?
+2023-04-09 17:54:03.744 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.E.getExceptionLogListByDate        : ==> Parameters: 10(Integer)
+2023-04-09 17:54:03.834 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.E.getExceptionLogListByDate        : <==      Total: 4
+2023-04-09 17:54:04.139 DEBUG 13192 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate_COUNT      : ==>  Preparing: SELECT count(0) FROM login_log
+2023-04-09 17:54:04.139 DEBUG 13192 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate_COUNT      : ==> Parameters: 
+2023-04-09 17:54:04.168 DEBUG 13192 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate_COUNT      : <==      Total: 1
+2023-04-09 17:54:04.169 DEBUG 13192 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate            : ==>  Preparing: SELECT id, username, ip, ip_source, os, browser, status, description, create_time FROM login_log order by create_time desc LIMIT ?
+2023-04-09 17:54:04.170 DEBUG 13192 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate            : ==> Parameters: 10(Integer)
+2023-04-09 17:54:04.203 DEBUG 13192 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate            : <==      Total: 10
+2023-04-09 17:54:04.568 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.m.S.getJobLogListByDate_COUNT        : ==>  Preparing: SELECT count(0) FROM schedule_job_log
+2023-04-09 17:54:04.568 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.m.S.getJobLogListByDate_COUNT        : ==> Parameters: 
+2023-04-09 17:54:04.597 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.m.S.getJobLogListByDate_COUNT        : <==      Total: 1
+2023-04-09 17:54:04.598 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.m.S.getJobLogListByDate              : ==>  Preparing: SELECT log_id, job_id, bean_name, method_name, params, status, error, times, create_time FROM schedule_job_log order by create_time desc LIMIT ?
+2023-04-09 17:54:04.598 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.m.S.getJobLogListByDate              : ==> Parameters: 10(Integer)
+2023-04-09 17:54:04.629 DEBUG 13192 --- [http-nio-8090-exec-2] c.r.m.S.getJobLogListByDate              : <==      Total: 10
+2023-04-09 17:54:06.903 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.V.getVisitorListByDate_COUNT       : ==>  Preparing: SELECT count(0) FROM visitor
+2023-04-09 17:54:06.903 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.V.getVisitorListByDate_COUNT       : ==> Parameters: 
+2023-04-09 17:54:06.937 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.V.getVisitorListByDate_COUNT       : <==      Total: 1
+2023-04-09 17:54:06.937 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.V.getVisitorListByDate             : ==>  Preparing: SELECT id, uuid, ip, ip_source, os, browser, create_time, last_time, pv FROM visitor order by create_time desc LIMIT ?
+2023-04-09 17:54:06.938 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.V.getVisitorListByDate             : ==> Parameters: 10(Integer)
+2023-04-09 17:54:06.969 DEBUG 13192 --- [http-nio-8090-exec-3] c.r.m.V.getVisitorListByDate             : <==      Total: 10
+2023-04-09 17:54:12.177 DEBUG 13192 --- [http-nio-8090-exec-7] c.r.m.S.getWebTitleSuffix                : ==>  Preparing: select value from site_setting where name_en = 'webTitleSuffix'
+2023-04-09 17:54:12.178 DEBUG 13192 --- [http-nio-8090-exec-7] c.r.m.S.getWebTitleSuffix                : ==> Parameters: 
+2023-04-09 17:54:12.209 DEBUG 13192 --- [http-nio-8090-exec-7] c.r.m.S.getWebTitleSuffix                : <==      Total: 1
+2023-04-09 17:54:17.331 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.V.getVisitorListByDate_COUNT       : ==>  Preparing: SELECT count(0) FROM visitor
+2023-04-09 17:54:17.331 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.V.getVisitorListByDate_COUNT       : ==> Parameters: 
+2023-04-09 17:54:17.360 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.V.getVisitorListByDate_COUNT       : <==      Total: 1
+2023-04-09 17:54:17.361 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.V.getVisitorListByDate             : ==>  Preparing: SELECT id, uuid, ip, ip_source, os, browser, create_time, last_time, pv FROM visitor order by create_time desc LIMIT ?
+2023-04-09 17:54:17.361 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.V.getVisitorListByDate             : ==> Parameters: 10(Integer)
+2023-04-09 17:54:17.395 DEBUG 13192 --- [http-nio-8090-exec-8] c.r.m.V.getVisitorListByDate             : <==      Total: 10
+2023-04-09 17:54:18.914 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.V.countVisitLogByToday             : ==>  Preparing: select count(*) from visit_log where date(create_time) = curdate()
+2023-04-09 17:54:18.914 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.V.countVisitLogByToday             : ==> Parameters: 
+2023-04-09 17:54:18.943 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.V.countVisitLogByToday             : <==      Total: 1
+2023-04-09 17:54:18.975 DEBUG 13192 --- [http-nio-8090-exec-9] com.rawchen.mapper.BlogMapper.countBlog  : ==>  Preparing: select count(*) from blog
+2023-04-09 17:54:18.975 DEBUG 13192 --- [http-nio-8090-exec-9] com.rawchen.mapper.BlogMapper.countBlog  : ==> Parameters: 
+2023-04-09 17:54:19.006 DEBUG 13192 --- [http-nio-8090-exec-9] com.rawchen.mapper.BlogMapper.countBlog  : <==      Total: 1
+2023-04-09 17:54:19.006 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.mapper.CommentMapper.countComment    : ==>  Preparing: select count(*) from comment
+2023-04-09 17:54:19.007 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.mapper.CommentMapper.countComment    : ==> Parameters: 
+2023-04-09 17:54:19.036 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.mapper.CommentMapper.countComment    : <==      Total: 1
+2023-04-09 17:54:19.037 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.B.getCategoryBlogCountList         : ==>  Preparing: select category_id, count(category_id) as blog_count from blog group by category_id
+2023-04-09 17:54:19.037 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.B.getCategoryBlogCountList         : ==> Parameters: 
+2023-04-09 17:54:19.075 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.B.getCategoryBlogCountList         : <==      Total: 2
+2023-04-09 17:54:19.076 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2023-04-09 17:54:19.076 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2023-04-09 17:54:19.106 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 2
+2023-04-09 17:54:19.106 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.mapper.TagMapper.getTagBlogCount     : ==>  Preparing: select tag_id, count(tag_id) as blog_count from blog_tag group by tag_id
+2023-04-09 17:54:19.106 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.mapper.TagMapper.getTagBlogCount     : ==> Parameters: 
+2023-04-09 17:54:19.137 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.mapper.TagMapper.getTagBlogCount     : <==      Total: 2
+2023-04-09 17:54:19.137 DEBUG 13192 --- [http-nio-8090-exec-9] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: select id, tag_name, color from tag order by id desc
+2023-04-09 17:54:19.138 DEBUG 13192 --- [http-nio-8090-exec-9] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 
+2023-04-09 17:54:19.168 DEBUG 13192 --- [http-nio-8090-exec-9] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 2
+2023-04-09 17:54:19.169 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.V.getVisitRecordListByLimit        : ==>  Preparing: select pv, uv, date from visit_record order by id desc limit ?
+2023-04-09 17:54:19.169 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.V.getVisitRecordListByLimit        : ==> Parameters: 30(Integer)
+2023-04-09 17:54:19.206 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.V.getVisitRecordListByLimit        : <==      Total: 10
+2023-04-09 17:54:19.206 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getCityVisitorList               : ==>  Preparing: select city, uv from city_visitor order by uv desc
+2023-04-09 17:54:19.206 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getCityVisitorList               : ==> Parameters: 
+2023-04-09 17:54:19.235 DEBUG 13192 --- [http-nio-8090-exec-9] c.r.m.C.getCityVisitorList               : <==      Total: 0
+2023-04-09 17:54:29.858 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.V.countVisitLogByToday             : ==>  Preparing: select count(*) from visit_log where date(create_time) = curdate()
+2023-04-09 17:54:29.858 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.V.countVisitLogByToday             : ==> Parameters: 
+2023-04-09 17:54:29.943 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.V.countVisitLogByToday             : <==      Total: 1
+2023-04-09 17:54:30.025 DEBUG 13192 --- [http-nio-8090-exec-1] com.rawchen.mapper.BlogMapper.countBlog  : ==>  Preparing: select count(*) from blog
+2023-04-09 17:54:30.025 DEBUG 13192 --- [http-nio-8090-exec-1] com.rawchen.mapper.BlogMapper.countBlog  : ==> Parameters: 
+2023-04-09 17:54:30.056 DEBUG 13192 --- [http-nio-8090-exec-1] com.rawchen.mapper.BlogMapper.countBlog  : <==      Total: 1
+2023-04-09 17:54:30.056 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.mapper.CommentMapper.countComment    : ==>  Preparing: select count(*) from comment
+2023-04-09 17:54:30.056 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.mapper.CommentMapper.countComment    : ==> Parameters: 
+2023-04-09 17:54:30.089 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.mapper.CommentMapper.countComment    : <==      Total: 1
+2023-04-09 17:54:30.090 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.B.getCategoryBlogCountList         : ==>  Preparing: select category_id, count(category_id) as blog_count from blog group by category_id
+2023-04-09 17:54:30.090 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.B.getCategoryBlogCountList         : ==> Parameters: 
+2023-04-09 17:54:30.121 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.B.getCategoryBlogCountList         : <==      Total: 2
+2023-04-09 17:54:30.121 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2023-04-09 17:54:30.121 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2023-04-09 17:54:30.151 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 2
+2023-04-09 17:54:30.151 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.mapper.TagMapper.getTagBlogCount     : ==>  Preparing: select tag_id, count(tag_id) as blog_count from blog_tag group by tag_id
+2023-04-09 17:54:30.151 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.mapper.TagMapper.getTagBlogCount     : ==> Parameters: 
+2023-04-09 17:54:30.180 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.mapper.TagMapper.getTagBlogCount     : <==      Total: 2
+2023-04-09 17:54:30.180 DEBUG 13192 --- [http-nio-8090-exec-1] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: select id, tag_name, color from tag order by id desc
+2023-04-09 17:54:30.180 DEBUG 13192 --- [http-nio-8090-exec-1] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 
+2023-04-09 17:54:30.219 DEBUG 13192 --- [http-nio-8090-exec-1] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 2
+2023-04-09 17:54:30.220 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.V.getVisitRecordListByLimit        : ==>  Preparing: select pv, uv, date from visit_record order by id desc limit ?
+2023-04-09 17:54:30.220 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.V.getVisitRecordListByLimit        : ==> Parameters: 30(Integer)
+2023-04-09 17:54:30.250 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.V.getVisitRecordListByLimit        : <==      Total: 10
+2023-04-09 17:54:30.250 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.C.getCityVisitorList               : ==>  Preparing: select city, uv from city_visitor order by uv desc
+2023-04-09 17:54:30.251 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.C.getCityVisitorList               : ==> Parameters: 
+2023-04-09 17:54:30.280 DEBUG 13192 --- [http-nio-8090-exec-1] c.r.m.C.getCityVisitorList               : <==      Total: 0
+2023-04-09 21:21:36.466  WARN 13192 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h9m11s278ms438µs200ns).
+2023-04-09 21:23:43.529  INFO 13192 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-04-09 21:23:43.544  INFO 13192 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-09 21:23:43.546  INFO 13192 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2023-04-09 21:23:43.546  INFO 13192 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-04-09 21:23:43.546  INFO 13192 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-04-09 21:23:43.547  INFO 13192 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-04-09 21:23:43.689  INFO 13192 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-09 21:23:43.692  INFO 13192 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

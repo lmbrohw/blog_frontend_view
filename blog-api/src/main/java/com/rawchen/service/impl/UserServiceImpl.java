@@ -39,4 +39,11 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 		}
 		return user;
 	}
+
+	@Override
+	public int insertUser(User user){
+		return userMapper.insert(user);
+	}
+
+
 }

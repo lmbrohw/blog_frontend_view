@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RedisConfiguration">
+    <option name="serverConfigurations">
+      <list>
+        <ServerConfiguration>
+          <option name="databaseVendor" value="DatabaseVendor{name='RedisDB'}" />
+          <option name="defaultKeyFilter" value="*" />
+          <option name="label" value="0" />
+          <option name="password" value="root1234" />
+          <option name="sercurityInfo">
+            <SercurityInfo>
+              <option name="sshAdress" value="8.130.52.85" />
+              <option name="sshPassword" value="xjtu1234" />
+              <option name="sshPort" value="21" />
+              <option name="sshUsePassword" value="true" />
+              <option name="sshUser" value="root" />
+              <option name="useSSH" value="true" />
+              <option name="useSsl" value="true" />
+            </SercurityInfo>
+          </option>
+          <option name="serverUrl" value="8.13.52.85:6379" />
+          <option name="userName" value="" />
+        </ServerConfiguration>
+      </list>
+    </option>
+  </component>
+</project>
