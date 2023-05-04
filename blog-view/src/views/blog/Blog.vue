@@ -1,9 +1,10 @@
 <template>
 	<div>
 		<div class="ui padded attached segment m-padded-tb-large">
-			<div class="ui large red right corner label" v-if="blog.top">
-				<i class="arrow alternate circle up icon"></i>
-			</div>
+<!--      置顶-->
+<!--			<div class="ui large red right corner label" v-if="blog.top">-->
+<!--				<i class="arrow alternate circle up icon"></i>-->
+<!--			</div>-->
 			<div class="ui middle aligned mobile reversed stackable">
 				<div class="ui grid m-margin-lr">
 					<!--标题-->
@@ -11,56 +12,56 @@
 						<h2 class="ui header m-center">{{ blog.title }}</h2>
 					</div>
 					<!--文章简要信息-->
-					<div class="row m-padded-tb-small">
-						<div class="ui horizontal link list m-center">
-							<div class="item m-datetime">
-								<i class="small calendar icon"></i><span>{{ blog.createTime | dateFormat('YYYY-MM-DD') }}</span>
-							</div>
-							<div class="item m-views">
-								<i class="el-icon-s-data"></i><span>{{ blog.views }}</span>
-							</div>
-							<div class="item m-common-gray">
-								<i class="el-icon-s-comment"></i><span>123</span>
-							</div>
-							<a class="item m-common-gray" @click.prevent="bigFontSize=!bigFontSize">
-								<div data-inverted="" data-tooltip="点击切换字体大小" data-position="top center">
-									<i class="font icon"></i>
-								</div>
-							</a>
-							<a class="item m-common-gray" @click.prevent="changeFocusMode">
-								<div data-inverted="" data-tooltip="专注模式" data-position="top center">
-									<i class="book icon"></i>
-								</div>
-							</a>
-						</div>
-					</div>
+<!--					<div class="row m-padded-tb-small">-->
+<!--						<div class="ui horizontal link list m-center">-->
+<!--							<div class="item m-datetime">-->
+<!--								<i class="small calendar icon"></i><span>{{ blog.createTime | dateFormat('YYYY-MM-DD') }}</span>-->
+<!--							</div>-->
+<!--							<div class="item m-views">-->
+<!--								<i class="el-icon-s-data"></i><span>{{ blog.views }}</span>-->
+<!--							</div>-->
+<!--							<div class="item m-common-gray">-->
+<!--								<i class="el-icon-s-comment"></i><span>123</span>-->
+<!--							</div>-->
+<!--							<a class="item m-common-gray" @click.prevent="bigFontSize=!bigFontSize">-->
+<!--								<div data-inverted="" data-tooltip="点击切换字体大小" data-position="top center">-->
+<!--									<i class="font icon"></i>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--							<a class="item m-common-gray" @click.prevent="changeFocusMode">-->
+<!--								<div data-inverted="" data-tooltip="专注模式" data-position="top center">-->
+<!--									<i class="book icon"></i>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--						</div>-->
+<!--					</div>-->
 					<!--分类-->
-					<router-link :to="`/category/${blog.category.name}`" class="ui orange large ribbon label" v-if="blog.category">
-						<i class="small folder open icon"></i><span class="m-text-500">{{ blog.category.name }}</span>
-					</router-link>
+<!--					<router-link :to="`/category/${blog.category.name}`" class="ui orange large ribbon label" v-if="blog.category">-->
+<!--						<i class="small folder open icon"></i><span class="m-text-500">{{ blog.category.name }}</span>-->
+<!--					</router-link>-->
 					<!--文章Markdown正文-->
 					<div class="typo js-toc-content m-padded-tb-small line-numbers match-braces rainbow-braces" v-viewer :class="{'m-big-fontsize':bigFontSize}" v-html="blog.content"></div>
 					<!--赞赏-->
-					<div style="margin: 2em auto">
-						<el-popover placement="top" width="220" trigger="click" v-if="blog.appreciation">
-							<div class="ui orange basic label" style="width: 100%">
-								<div class="image">
-									<div style="font-size: 12px;text-align: center;margin-bottom: 5px;">一毛是鼓励</div>
-									<img :src="$store.state.siteInfo.reward" alt="" class="ui rounded bordered image" style="width: 100%">
-									<div style="font-size: 12px;text-align: center;margin-top: 5px;">一块是真爱</div>
-								</div>
-							</div>
-						<el-button slot="reference" class="ui orange inverted circular button m-text-500">赞赏</el-button>
-						</el-popover>
-					</div>
-					<!--横线-->
-					<el-divider></el-divider>
-					<!--标签-->
-					<div class="row m-padded-tb-no">
-						<div class="column m-padding-left-no">
-							<router-link :to="`/tag/${tag.name}`" class="ui tag label m-text-500 m-margin-small" :class="tag.color" v-for="(tag,index) in blog.tags" :key="index">{{ tag.name }}</router-link>
-						</div>
-					</div>
+<!--					<div style="margin: 2em auto">-->
+<!--						<el-popover placement="top" width="220" trigger="click" v-if="blog.appreciation">-->
+<!--							<div class="ui orange basic label" style="width: 100%">-->
+<!--								<div class="image">-->
+<!--									<div style="font-size: 12px;text-align: center;margin-bottom: 5px;">一毛是鼓励</div>-->
+<!--									<img :src="$store.state.siteInfo.reward" alt="" class="ui rounded bordered image" style="width: 100%">-->
+<!--									<div style="font-size: 12px;text-align: center;margin-top: 5px;">一块是真爱</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						<el-button slot="reference" class="ui orange inverted circular button m-text-500">赞赏</el-button>-->
+<!--						</el-popover>-->
+<!--					</div>-->
+<!--					&lt;!&ndash;横线&ndash;&gt;-->
+<!--					<el-divider></el-divider>-->
+<!--					&lt;!&ndash;标签&ndash;&gt;-->
+<!--					<div class="row m-padded-tb-no">-->
+<!--						<div class="column m-padding-left-no">-->
+<!--							<router-link :to="`/tag/${tag.name}`" class="ui tag label m-text-500 m-margin-small" :class="tag.color" v-for="(tag,index) in blog.tags" :key="index">{{ tag.name }}</router-link>-->
+<!--						</div>-->
+<!--					</div>-->
 				</div>
 			</div>
 		</div>

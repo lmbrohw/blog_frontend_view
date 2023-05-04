@@ -10,42 +10,42 @@
 		<div class="main">
 			<div class="m-padded-tb-big">
 				<div class="ui container">
-					<div class="ui stackable grid">
+<!--					<div class="ui stackable grid">-->
 						<!--左侧-->
-						<div class="three wide column m-mobile-hide">
-							<Introduction :class="{'m-display-none':focusMode}"/>
-						</div>
+<!--						<div class="one wide column m-mobile-hide" style="visibility: hidden;">-->
+<!--							<Introduction :class="{'m-display-none':focusMode}"/>-->
+<!--						</div>-->
 						<!--中间-->
-						<div class="ten wide column">
+						<div  style="width: 1500px">
 							<keep-alive include="Home">
 								<router-view/>
 							</keep-alive>
 						</div>
 						<!--右侧-->
-						<div class="three wide column m-mobile-hide">
-							<RandomBlog :randomBlogList="randomBlogList" :class="{'m-display-none':focusMode}"/>
-							<Tags :tagList="tagList" :class="{'m-display-none':focusMode}"/>
-							<!--只在文章页面显示目录-->
-							<Tocbot v-if="$route.name==='blog'"/>
-						</div>
-					</div>
+<!--						<div class="three wide column m-mobile-hide">-->
+<!--							<RandomBlog :randomBlogList="randomBlogList" :class="{'m-display-none':focusMode}"/>-->
+<!--							<Tags :tagList="tagList" :class="{'m-display-none':focusMode}"/>-->
+<!--							&lt;!&ndash;只在文章页面显示目录&ndash;&gt;-->
+<!--							<Tocbot v-if="$route.name==='blog'"/>-->
+<!--						</div>-->
+<!--					</div>-->
 				</div>
 			</div>
 		</div>
 
 		<!--私密文章密码对话框-->
-		<BlogPasswordDialog/>
+<!--		<BlogPasswordDialog/>-->
 
-		<!--APlayer-->
-		<div class="m-mobile-hide">
-			<MyAPlayer/>
-		</div>
-		<!--回到顶部-->
-		<el-backtop style="box-shadow: none;background: none;">
-			<img src="/img/paper-plane.png" style="width: 40px;height: 40px;z-index: 999999;">
-		</el-backtop>
-		<!--底部footer-->
-		<Footer :siteInfo="siteInfo" :badges="badges" :newBlogList="newBlogList" :hitokoto="hitokoto"/>
+<!--		&lt;!&ndash;APlayer&ndash;&gt;-->
+<!--		<div class="m-mobile-hide">-->
+<!--			<MyAPlayer/>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;回到顶部&ndash;&gt;-->
+<!--		<el-backtop style="box-shadow: none;background: none;">-->
+<!--			<img src="/img/paper-plane.png" style="width: 40px;height: 40px;z-index: 999999;">-->
+<!--		</el-backtop>-->
+<!--		&lt;!&ndash;底部footer&ndash;&gt;-->
+<!--		<Footer :siteInfo="siteInfo" :badges="badges" :newBlogList="newBlogList" :hitokoto="hitokoto"/>-->
 	</div>
 </template>
 

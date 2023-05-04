@@ -45,13 +45,13 @@
 			</div>
 			<el-form-item prop="nickname">
 				<el-popover ref="nicknamePopover" placement="bottom" trigger="focus" content="输入QQ号将自动拉取昵称和头像"></el-popover>
-				<el-input v-model="commentForm.nickname" placeholder="QQ（必填）" :validate-event="false" v-popover:nicknamePopover>
+				<el-input v-model="commentForm.nickname" placeholder="QQ（游客必填）" :validate-event="false" v-popover:nicknamePopover>
 					<i slot="prefix" class="el-input__icon el-icon-user"></i>
 				</el-input>
 			</el-form-item>
 			<el-form-item prop="email">
 				<el-popover ref="emailPopover" placement="bottom" trigger="focus" content="用于接收回复邮件"></el-popover>
-				<el-input v-model="commentForm.email" placeholder="邮箱（必填）" :validate-event="false" v-popover:emailPopover>
+				<el-input v-model="commentForm.email" placeholder="邮箱（游客必填）" :validate-event="false" v-popover:emailPopover>
 					<i slot="prefix" class="el-input__icon el-icon-message"></i>
 				</el-input>
 			</el-form-item>

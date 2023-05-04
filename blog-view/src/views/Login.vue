@@ -15,6 +15,7 @@
 				</el-form-item>
 				<el-form-item class="btns">
 					<el-button type="primary" @click="login">登录</el-button>
+          <el-button type="primary" @click="back">返回</el-button>
 					<el-button type="info" @click="resetLoginForm">重置</el-button>
 				</el-form-item>
 			</el-form>
@@ -30,8 +31,8 @@
 		data() {
 			return {
 				loginForm: {
-					username: 'admin',
-					password: 'admin'
+					username: '',
+					password: ''
 				},
 				loginFormRules: {
 					username: [
@@ -54,6 +55,7 @@
 							if (res.code === 200) {
 								this.msgSuccess(res.msg)
 								window.localStorage.setItem('adminToken', res.data.token)
+                window.localStorage.setItem('user', JSON.stringify(res.data.user))
 								this.$router.push('/home')
 							} else {
 								this.msgError(res.msg)
@@ -63,7 +65,10 @@
 						})
 					}
 				})
-			}
+			},
+      back(){
+        this.$router.push('/home')
+      }
 		}
 	}
 </script>

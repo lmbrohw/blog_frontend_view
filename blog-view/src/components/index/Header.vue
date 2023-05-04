@@ -1,9 +1,9 @@
 <template>
 	<header ref="header">
 		<div class="view">
-			<!-- <img ref="imgbg1" src="https://cdn.jsdelivr.net/gh/Naccl/blog-resource/img/bg1.jpg" style="display: none;"> -->
+<!--			 <img ref="imgbg1" src="https://cdn.jsdelivr.net/gh/Naccl/blog-resource/img/bg1.jpg" style="display: none;">-->
 			<div style="background-image: url('https://cdn.jsdelivr.net/gh/yoyling/JsDelivr/bg/bg-04.png');"></div>
-			<!-- <div class="bg2" style="background-image: url('https://cdn.jsdelivr.net/gh/yoyling/JsDelivr/bg/bg-02.jpg');"></div> -->
+<!--			 <div class="bg2" style="background-image: url('https://cdn.jsdelivr.net/gh/yoyling/JsDelivr/bg/bg-02.jpg');"></div>-->
 			<!-- <div class="bg3" style="background-image: url('https://cdn.jsdelivr.net/gh/yoyling/JsDelivr/bg/bg-03.jpg');" v-show="loaded"></div> -->
 		</div>
 		<div class="text-malfunction">{{blogName}}<span class="caret"></span>

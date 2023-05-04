@@ -25,21 +25,21 @@
 				</div>
 			</div>
 
-			<div class="ui inverted section divider"></div>
+<!--			<div class="ui inverted section divider"></div>-->
 
-			<p class="m-text-thin m-text-spaced m-opacity-tiny">
-				<span style="margin-right: 10px" v-if="siteInfo.copyright">{{ siteInfo.copyright.title }}</span>
-				<router-link to="/" style="color:#ffe500" v-if="siteInfo.copyright">{{ siteInfo.copyright.siteName }}</router-link>
-				<span style="margin: 0 15px" v-if="siteInfo.copyright && siteInfo.beian">|</span>
-				<a rel="external nofollow noopener" href="http://beian.miit.gov.cn/" target="_blank" style="color:#ffe500">{{ siteInfo.beian }}</a>
-			</p>
+<!--			<p class="m-text-thin m-text-spaced m-opacity-tiny">-->
+<!--				<span style="margin-right: 10px" v-if="siteInfo.copyright">{{ siteInfo.copyright.title }}</span>-->
+<!--				<router-link to="/" style="color:#ffe500" v-if="siteInfo.copyright">{{ siteInfo.copyright.siteName }}</router-link>-->
+<!--				<span style="margin: 0 15px" v-if="siteInfo.copyright && siteInfo.beian">|</span>-->
+<!--				<a rel="external nofollow noopener" href="http://beian.miit.gov.cn/" target="_blank" style="color:#ffe500">{{ siteInfo.beian }}</a>-->
+<!--			</p>-->
 
-			<div class="github-badge" v-for="(item,index) in badges" :key="index">
-				<a rel="external nofollow noopener" :href="item.url" target="_blank" :title="item.title">
-					<span class="badge-subject">{{ item.subject }}</span>
-					<span class="badge-value" :class="`bg-${item.color}`">{{ item.value }}</span>
-				</a>
-			</div>
+<!--			<div class="github-badge" v-for="(item,index) in badges" :key="index">-->
+<!--				<a rel="external nofollow noopener" :href="item.url" target="_blank" :title="item.title">-->
+<!--					<span class="badge-subject">{{ item.subject }}</span>-->
+<!--					<span class="badge-value" :class="`bg-${item.color}`">{{ item.value }}</span>-->
+<!--				</a>-->
+<!--			</div>-->
 
 		</div>
 	</footer>
