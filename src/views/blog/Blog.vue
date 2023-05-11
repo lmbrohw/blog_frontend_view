@@ -8,7 +8,19 @@
 						<h2 class="ui header m-center">{{ blog.title }}</h2>
 					</div>
 					<div class="typo js-toc-content m-padded-tb-small line-numbers match-braces rainbow-braces" v-viewer :class="{'m-big-fontsize':bigFontSize}" v-html="blog.content"></div>
-				</div>
+          <!--赞赏-->
+          <div style="margin: 2em auto">
+            <el-popover placement="top" width="220" trigger="click" v-if="blog.appreciation">
+              <div class="ui orange basic label" style="width: 100%">
+                <div class="image">
+                  <div style="font-size: 12px;text-align: center;margin-bottom: 5px;">谢谢您的鼓励！</div>
+                  <img :src="$store.state.siteInfo.reward" alt="" class="ui rounded bordered image" style="width: 100%">
+                </div>
+              </div>
+              <el-button slot="reference" class="ui orange inverted circular button m-text-500">赞赏</el-button>
+            </el-popover>
+          </div>
+        </div>
 			</div>
 		</div>
 		<!--博客信息-->
