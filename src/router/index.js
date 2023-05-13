@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import store from '@/store'
 import Index from "@/views/Index";
 import Home from "@/views/home/Home";
+import Category from "@/views/category/Category";
 import Blog from "@/views/blog/Blog";
 import Login from "@/views/Login";
 
@@ -35,6 +36,14 @@ const routes = [
 				component: Blog,
 				meta: {
 					title: '博客'
+				}
+			},
+			{
+				path: '/category/:name',
+				name: 'category',
+				component: Category,
+				meta: {
+					title: '分类'
 				}
 			},
 		]

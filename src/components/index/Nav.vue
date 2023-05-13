@@ -8,6 +8,14 @@
       <router-link to="/home" class="item" :class="{'m-mobile-hide': mobileHide,'active':$route.name==='home'}">
         <i class="home icon"></i>首页
       </router-link>
+      <el-dropdown trigger="click" @command="categoryRoute">
+				<span class="el-dropdown-link item" :class="{'m-mobile-hide': mobileHide,'active':$route.name==='category'}">
+					<i class="idea icon"></i>分类<i class="caret down icon"></i>
+				</span>
+				<el-dropdown-menu slot="dropdown">
+					<el-dropdown-item :command="category.name" v-for="(category,index) in categoryList" :key="index">{{ category.name }}</el-dropdown-item>
+				</el-dropdown-menu>
+			</el-dropdown>
       <router-link to="/login" class="login" :class="{'m-mobile-hide': mobileHide,'active':$route.name==='login'}">
         <i class="info icon"></i>博主登录
       </router-link>
