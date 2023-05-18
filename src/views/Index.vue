@@ -44,8 +44,8 @@
     <el-backtop style="box-shadow: none;background: none;">
       <img src="/img/paper-plane.png" style="width: 40px;height: 40px;z-index: 999999;">
     </el-backtop>
-    <!--底部footer-->
-<!--    <Footer :siteInfo="siteInfo" :badges="badges" :newBlogList="newBlogList" :hitokoto="hitokoto"/>-->
+<!--    底部footer-->
+    <Footer :siteInfo="siteInfo" :badges="badges" :newBlogList="newBlogList" :hitokoto="hitokoto"/>
   </div>
 </template>
 
