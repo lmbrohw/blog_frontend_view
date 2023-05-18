@@ -13,6 +13,10 @@
 							<a href="javascript:;" @click.prevent="toBlog(item)" class="m-black">{{ item.title }}</a>
 						</h2>
 					</div>
+          <!--分类-->
+          <router-link :to="`/category/${item.category.name}`" class="ui orange large ribbon label">
+            <i class="small folder open icon"></i><span class="m-text-500">{{ item.category.name }}</span>
+          </router-link>
 					<div class="typo m-padded-tb-small line-numbers match-braces rainbow-braces" v-html="item.description"></div>
 					<!--阅读全文按钮-->
 					<div class="row m-padded-tb-small m-margin-top">

@@ -10,6 +10,10 @@
 					<div class="row m-padded-tb-small">
 						<h2 class="ui header m-center">{{ blog.title }}</h2>
 					</div>
+          <!--分类-->
+          <router-link :to="`/category/${blog.category.name}`" class="ui orange large ribbon label" v-if="blog.category">
+            <i class="small folder open icon"></i><span class="m-text-500">{{ blog.category.name }}</span>
+          </router-link>
 					<div class="typo js-toc-content m-padded-tb-small line-numbers match-braces rainbow-braces" v-viewer :class="{'m-big-fontsize':bigFontSize}" v-html="blog.content"></div>
           <!--赞赏-->
           <div style="margin: 2em auto">
