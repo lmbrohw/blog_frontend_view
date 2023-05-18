@@ -4,6 +4,7 @@ import store from '@/store'
 import Index from "@/views/Index";
 import Home from "@/views/home/Home";
 import Category from "@/views/category/Category";
+import Tag from "@/views/tag/Tag";
 import Blog from "@/views/blog/Blog";
 import Login from "@/views/Login";
 
@@ -46,6 +47,14 @@ const routes = [
 					title: '分类'
 				}
 			},
+			{
+				path: '/tag/:name',
+				name: 'tag',
+				component: Tag,
+				meta: {
+					title: '标签'
+				}
+			}
 		]
 	}
 ]

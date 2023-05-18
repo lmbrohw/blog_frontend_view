@@ -1,6 +1,9 @@
 <template>
 	<div>
 		<div class="ui padded attached segment m-padded-tb-large">
+      <div class="ui large red right corner label" v-if="blog.top">
+        <i class="arrow alternate circle up icon"></i>
+      </div>
 			<div class="ui middle aligned mobile reversed stackable">
 				<div class="ui grid m-margin-lr">
 					<!--标题-->
@@ -19,6 +22,14 @@
               </div>
               <el-button slot="reference" class="ui orange inverted circular button m-text-500">赞赏</el-button>
             </el-popover>
+          </div>
+          <!--横线-->
+          <el-divider></el-divider>
+          <!--标签-->
+          <div class="row m-padded-tb-no">
+            <div class="column m-padding-left-no">
+              <router-link :to="`/tag/${tag.name}`" class="ui tag label m-text-500 m-margin-small" :class="tag.color" v-for="(tag,index) in blog.tags" :key="index">{{ tag.name }}</router-link>
+            </div>
           </div>
         </div>
 			</div>

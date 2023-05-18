@@ -12,9 +12,9 @@
         <div class="ui container">
           <div class="ui stackable grid">
             <!--左侧-->
-<!--            <div class="three wide column m-mobile-hide">-->
-<!--              <Introduction :class="{'m-display-none':focusMode}"/>-->
-<!--            </div>-->
+            <div class="three wide column m-mobile-hide">
+              <Introduction :class="{'m-display-none':focusMode}"/>
+            </div>
             <!--中间-->
             <div class="ten wide column">
               <keep-alive include="Home">

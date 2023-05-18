@@ -1,6 +1,9 @@
 <template>
 	<div>
 		<div class="ui padded attached segment m-padded-tb-large m-margin-bottom-big m-box" v-for="item in blogList" :key="item.id">
+      <div class="ui large red right corner label" v-if="item.top">
+        <i class="arrow alternate circle up icon"></i>
+      </div>
 			<div class="ui middle aligned mobile reversed stackable">
 				<div class="ui grid m-margin-lr">
 
@@ -15,6 +18,14 @@
 					<div class="row m-padded-tb-small m-margin-top">
 						<a href="javascript:;" @click.prevent="toBlog(item)" class="color-btn">阅读全文</a>
 					</div>
+          <!--横线-->
+          <div class="ui section divider m-margin-lr-no"></div>
+          <!--标签-->
+          <div class="row m-padded-tb-no">
+            <div class="column m-padding-left-no">
+              <router-link :to="`/tag/${tag.name}`" class="ui tag label m-text-500 m-margin-small" :class="tag.color" v-for="(tag,index) in item.tags" :key="index">{{ tag.name }}</router-link>
+            </div>
+          </div>
 				</div>
 			</div>
 		</div>
