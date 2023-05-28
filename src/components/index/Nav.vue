@@ -27,6 +27,15 @@
           <el-dropdown-item icon="ali-iconfont icon-logout">退出</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
+        <el-autocomplete v-model="queryString" :fetch-suggestions="debounceQuery" placeholder="Search..."
+                         class="right item m-search" :class="{'m-mobile-hide': mobileHide}"
+                         popper-class="m-search-item" @select="handleSelect">
+            <i class="search icon el-input__icon" slot="suffix"></i>
+            <template slot-scope="{ item }">
+                <div class="title">{{ item.title }}</div>
+                <span class="content">{{ item.content }}</span>
+            </template>
+        </el-autocomplete>
       <button class="ui menu black icon button m-right-top m-mobile-show" @click="toggle">
         <i class="sidebar icon"></i>
       </button>
