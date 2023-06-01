@@ -37,9 +37,9 @@
     <BlogPasswordDialog/>
 
     <!--APlayer-->
-<!--    <div class="m-mobile-hide">-->
-<!--      <MyAPlayer/>-->
-<!--    </div>-->
+    <div class="m-mobile-hide">
+      <MyAPlayer/>
+    </div>
     <!--回到顶部-->
     <el-backtop style="box-shadow: none;background: none;">
       <img src="/img/paper-plane.png" style="width: 40px;height: 40px;z-index: 999999;">
