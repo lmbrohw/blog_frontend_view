@@ -4,6 +4,7 @@ import store from '@/store'
 import Index from "@/views/Index";
 import Home from "@/views/home/Home";
 import Category from "@/views/category/Category";
+import Moments from "@/views/moments/Moments";
 import Tag from "@/views/tag/Tag";
 import Blog from "@/views/blog/Blog";
 import Login from "@/views/Login";
@@ -53,6 +54,14 @@ const routes = [
 				component: Tag,
 				meta: {
 					title: '标签'
+				}
+			},
+			{
+				path: '/moments',
+				name: 'moments',
+				component: Moments,
+				meta: {
+					title: '动态'
 				}
 			}
 		]

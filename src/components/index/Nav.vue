@@ -16,6 +16,9 @@
 					<el-dropdown-item :command="category.name" v-for="(category,index) in categoryList" :key="index">{{ category.name }}</el-dropdown-item>
 				</el-dropdown-menu>
 			</el-dropdown>
+      <router-link to="/moments" class="item" :class="{'m-mobile-hide': mobileHide,'active':$route.name==='moments'}">
+				<i class="comment alternate outline icon"></i>动态
+			</router-link>
       <router-link to="/login" class="login" :class="{'m-mobile-hide': mobileHide,'active':$route.name==='login'}">
         <i class="info icon"></i>博主登录
       </router-link>
